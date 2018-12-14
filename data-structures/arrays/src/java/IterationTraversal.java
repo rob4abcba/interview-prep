@@ -153,12 +153,20 @@ public class IterationTraversal {
         int [][] matrix = new int [][] {{1,2,3}, {4,5,6}, {7,8,9}};
         int [] notSorted = new int [] {6,5,4,3,2,1};
 
+        System.out.println("\r\nAfter flipSquareMatrix: ");
         flipSquareMatrix(matrix);
         assert (findMax(data) == 6);
         assert (findMin(data) == 1);
         assert (computeSum(data)== 21);
+
+        System.out.println("\r\nprintElementsInArray(data): ");
         printElementsInArray(data);
+
+        System.out.println("\r\nBefore sorted: ");
+        printElementsInArray(notSorted);
+
         sort(notSorted);
+        System.out.println("\r\nAfter sorted: ");
         printElementsInArray(notSorted);
         
     }
