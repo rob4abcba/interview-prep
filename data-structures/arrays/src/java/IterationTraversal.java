@@ -42,6 +42,28 @@ public class IterationTraversal {
         return min;
     }
 
+    public static int findRange(int [] values) {
+        // error checking / input validation
+
+        int min = values[0];
+
+        for (int number : values) {
+            if (number < min) {
+                min = number;
+            }
+        }
+
+        int max = values[0];
+
+        for (int index = 0; index < values.length; index++) {
+            if (values[index] > max) {
+                max = values[index];
+            }
+        }
+
+        return max - min;
+    }
+
     public static int computeSum(int [] values) {
         // error checking / input validation
 
@@ -157,6 +179,7 @@ public class IterationTraversal {
         flipSquareMatrix(matrix);
         assert (findMax(data) == 6);
         assert (findMin(data) == 1);
+        assert (findRange(data) == 5);
         assert (computeSum(data)== 21);
 
         System.out.println("\r\nprintElementsInArray(data): ");
