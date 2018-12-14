@@ -131,3 +131,6 @@ Tail = NULL                        |                              |             
 1. Implement the method to swap the contents of every even / odd pair of linked list nodes.
 
 ### Problem Set
+1. Given a linked list reverse the order of the elements contained within it.
+1. Given a linked list determine if there exists a cycle.
+1. Given a node within a linked list delete the node from the linked list.
