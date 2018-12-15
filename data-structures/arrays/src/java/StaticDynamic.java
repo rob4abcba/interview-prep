@@ -48,6 +48,7 @@ public class StaticDynamic {
             // 0x40000
             // 1 << 3 == 8 == 0b0000000001 <=> 0b0000001000
             
+            // RL When I try to compile, javac complains about List and ArrayList
             List <Integer> dataToSend = new ArrayList<>(1 << 18);
             // uses default block size of i think 16 bytes
             for (int index = 0; index < (1 << 18); index++) {
