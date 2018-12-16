@@ -44,20 +44,6 @@ public class StaticDynamic {
             // maybe increment by powers of two
             // capacity 8 when full the new capacity is 16
 
-            // I need to send 64 MB for UDP
-            // 0x40000
-            // 1 << 3 == 8 == 0b0000000001 <=> 0b0000001000
-            
-            List <Integer> dataToSend = new ArrayList<>(1 << 18);
-            // uses default block size of i think 16 bytes
-            for (int index = 0; index < (1 << 18); index++) {
-                // bytes 0 - 7 are okay no new capacity
-                // bytes 8 - 15 new capacity of 16 copy at byte 8 of bytes 0 through 7 to the new buffer
-                // bytes 16 - 31 new capacity of 32 copy at byte 16 of bytes 0 through 15 to the new buffer
-                
-                dataToSend.add(index);
-            }
-
             // copy data over to the new array.
             // O(N)
             int index = 0;
@@ -97,14 +83,17 @@ public class StaticDynamic {
         this.mArray = newArray;
         this.mSize = newArray.length;
         this.mCapacity = newArray.length;
+
+        return 0;
     }
 
     public int removeAtIndex(int index) {
         // but copy except at the specified index
+        return 0;
     }
 
     public int removeFirst() {
-        
+        return 0;
     }
 
     // find an element
