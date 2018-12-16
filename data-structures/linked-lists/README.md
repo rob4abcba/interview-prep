@@ -103,8 +103,8 @@ Many problems play off of iteration by requiring keeping track of multiple point
 #### Exercises
 
 1. Iterate through a linked list serially.
-1. Iterate through a linked list using recursion.
-1. Iterate through a linked list using two pointers, a fast (moves two at a time), and a slow (moves one at a time).
+2. Iterate through a linked list using recursion.
+3. Iterate through a linked list using two pointers, a fast (moves two at a time), and a slow (moves one at a time).
 
 ### Data Manipulation
 As with most other data structures, you can add, remove, modify the data structure itself. Many problems revolve around this as well.
@@ -126,11 +126,11 @@ Tail = NULL                        |                              |             
 #### Exercises
 
 1. Implement the linked list method responsible for adding new elements to the linked list.
-1. Implement the linked list method responsible for removing elements from the head of the linked list.
-1. Implement the linked list method responsible for removing elements from the tail of the linked list.
-1. Implement the method to swap the contents of every even / odd pair of linked list nodes.
+2. Implement the linked list method responsible for removing elements from the head of the linked list.
+3. Implement the linked list method responsible for removing elements from the tail of the linked list.
+4. Implement the method to swap the contents of every even / odd pair of linked list nodes.
 
 ### Problem Set
 1. Given a linked list reverse the order of the elements contained within it.
-1. Given a linked list determine if there exists a cycle.
-1. Given a node within a linked list delete the node from the linked list.
+2. Given a linked list determine if there exists a cycle.
+3. Given a node within a linked list delete the node from the linked list.
